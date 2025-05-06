@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: myrepo/myapp:v2.0.0  # 버전별로 수정
+        image: ba2slk/myapp:v2.0.0  # 버전별로 수정
         ports:
         - containerPort: 5000
   strategy:
