@@ -1,0 +1,13 @@
+apiVersion: v2
+kind: Service
+metadata:
+  name: myapp-service
+spec:
+  type: NodePort
+  selector:
+    app: myapp
+  ports:
+    - protocol: TCP
+      port: 5000           # Service 포트 (클러스터 내부)
+      targetPort: 5000    # Pod 내부 포트 (uvicorn 실행 포트)
+      nodePort: 30080     # Node(서버) 외부 노출 포트
