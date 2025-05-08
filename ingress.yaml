@@ -8,7 +8,6 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: 3.37.127.77  # 도메인 없으면 서버IP 그대로 작성
       http:
         paths:
           - path: /
